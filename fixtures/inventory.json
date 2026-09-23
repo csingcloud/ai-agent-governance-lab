@@ -1,0 +1,36 @@
+{
+  "synthetic": true,
+  "agents": [
+    {
+      "agent_id": "agent-records-001",
+      "identity": "synthetic-service-principal-001",
+      "owner": "synthetic-records-team",
+      "runtime": "mcp-client",
+      "authority": {
+        "id": "synthetic-approval-001",
+        "valid_from": "2026-01-01T00:00:00Z",
+        "valid_until": "2026-02-01T00:00:00Z"
+      },
+      "permissions": [
+        {
+          "tool": "records.search",
+          "resources": [
+            "synthetic-public-catalog"
+          ]
+        }
+      ]
+    },
+    {
+      "agent_id": "agent-local-002",
+      "identity": "synthetic-local-process-002",
+      "owner": "",
+      "runtime": "local-llm",
+      "authority": {
+        "id": "",
+        "valid_from": "2026-01-01T00:00:00Z",
+        "valid_until": "2026-02-01T00:00:00Z"
+      },
+      "permissions": []
+    }
+  ]
+}
